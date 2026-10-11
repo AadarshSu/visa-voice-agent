@@ -29,16 +29,26 @@ Visa Research Agent (:8098, sign-in off)
 
 ## Run
 
+Clone the Visa Research Agent beside this project and set it up as its own
+[README](https://github.com/AadarshSu/visa-research-desk#local-setup) describes (a virtual
+environment and an `.env` with its OpenAI and search keys):
+
+```bash
+git clone https://github.com/AadarshSu/visa-research-desk.git ../visa-research-desk
+```
+
+Then set up this project:
+
 ```bash
 python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
 cp .env.example .env            # then add ELEVENLABS_API_KEY
 .venv/bin/python setup_agent.py # creates the agent; run again after editing agent/prompt.md
 ```
 
-Start both servers (also in `.claude/launch.json`):
+Start both servers, the Visa Research Agent with sign-in off:
 
 ```bash
-cd "../Visa Research Agent" && REQUIRE_SIGN_IN=false ANONYMOUS_PLAN_ALLOWANCE=100 .venv/bin/python -m uvicorn visa_research_agent.api.app:create_app --factory --port 8098
+cd ../visa-research-desk && REQUIRE_SIGN_IN=false ANONYMOUS_PLAN_ALLOWANCE=100 .venv/bin/python -m uvicorn visa_research_agent.api.app:create_app --factory --port 8098
 ```
 
 ```bash
