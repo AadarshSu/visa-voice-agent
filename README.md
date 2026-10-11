@@ -1,6 +1,6 @@
 # Visa Voice Agent
 
-A voice front end for the [Visa Research Agent](../Visa%20Research%20Agent). You describe a trip out
+A voice front end for the [Visa Research Agent](https://github.com/AadarshSu/visa-research-desk). You describe a trip out
 loud; an ElevenLabs agent collects the details, starts live research against the destination's own
 government pages, narrates progress while it runs, and answers, including follow-up questions,
 only from the finished, cited plan.
