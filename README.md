@@ -5,6 +5,12 @@ loud; an ElevenLabs agent collects the details, starts live research against the
 government pages, narrates progress while it runs, and answers, including follow-up questions,
 only from the finished, cited plan.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/1d4b62a5-7023-41f1-8317-20a6991a590f
+
+
 ## How it fits together
 
 ```
