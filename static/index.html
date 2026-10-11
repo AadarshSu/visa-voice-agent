@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visa Voice Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Visa Voice Agent</h1>
+      <p class="lede">Ask about a trip out loud. Answers come only from the destination's own
+        government pages, read live by the Visa Research Agent.</p>
+    </header>
+
+    <section class="call">
+      <button id="talk" type="button">Start talking</button>
+      <p id="status" role="status">Not connected</p>
+    </section>
+
+    <section id="progress" hidden>
+      <h2>Research</h2>
+      <ol id="steps"></ol>
+    </section>
+
+    <section id="plan" hidden></section>
+
+    <section>
+      <h2>Conversation</h2>
+      <ol id="transcript"></ol>
+    </section>
+  </main>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "voice-bridge",
+      "runtimeExecutable": ".venv/bin/python",
+      "runtimeArgs": ["-m", "uvicorn", "server:app", "--port", "8200"],
+      "port": 8200
+    },
+    {
+      "name": "visa-research-agent-open",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": [
+        "-c",
+        "cd '/Users/aadarsh/Documents/Visa Research Agent' && REQUIRE_SIGN_IN=false ANONYMOUS_PLAN_ALLOWANCE=100 exec .venv/bin/python -m uvicorn visa_research_agent.api.app:create_app --factory --port 8098"
+      ],
+      "port": 8098
+    }
+  ]
+}
